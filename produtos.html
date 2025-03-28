@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Produtos</h1>
+        <div class="container">
+            <a href="home.html">Home</a>
+            <a href="funcionarios.html">Funcionários</a>
+            <a href="clientes.html">Clientes</a>
+        </div>
+    </header>
+
+    <main>
+        
+        <container class="cadastro">
+            <button id="abrirModal">Novo Produto</button>
+        </container>
+<div id="meuModal" class="modal">
+    <div class="modal-conteudo">
+        <span class="fechar">&times;</span>
+        <h3>Cadastre um Produto</h3>
+        <form id="formCadastro">
+            <input type="text" id="Nome" placeholder="Nome" name="nome" required>
+            <input type="text" id="Descrição" placeholder="Descrição" name="descricao" required>
+            <input type="text" id="Valor de Custo" placeholder="Valor de Custo" name="valor de custo" required>
+            <input type="text" id="Valor de Venda" placeholder="Valor de Venda" name="valor de venda" required>
+            <button type="submit">+</button>
+        </form>
+    </div>
+</div>
+
+        <container class="apresentarprodutos">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Descrição</th>
+                    <th>Valor de Custo</th>
+                    <th>Valor de Venda</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>Arroz</td>
+                    <td>Arroz Branco</td>
+                    <td>R$2,00</td>
+                    <td>R$9,00</td>
+                    <td>
+                        <button class="acao-btn editar">Editar</button>
+                        <button class="acao-btn excluir">Excluir</button> 
+                    </td>
+                </tr>
+                <td>Feijão</td>
+                <td>Feijão Preto</td>
+                <td>R$3,00</td>
+                <td>R$10,00</td>
+                <td>
+                    <button class="acao-btn editar">Editar</button>
+                    <button class="acao-btn excluir">Excluir</button>
+                </td>
+                </tr>
+                <tr>
+                    <td>Macarrão</td>
+                    <td>Macarrão Espaguete</td>
+                    <td>R$1,50</td>
+                    <td>R$5,00</td>
+                    <td>
+                        <button class="acao-btn editar">Editar</button>
+                        <button class="acao-btn excluir">Excluir</button>
+                    </td>
+               
+            </table>
+        </container>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sistema de Gestão. Todos os direitos reservados.</p>    
+    </footer>
+</body>
+<script src="js/produtos.js"></script>
+</html>

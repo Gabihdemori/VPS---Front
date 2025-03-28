@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funcionários</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Funcionários</h1>
+        <div class="container">
+            <a href="home.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="clientes.html">Clientes</a>
+        </div>
+    </header>
+
+    <main>
+        
+        <container class="cadastro">
+            <button id="abrirModal">Novo Funcionário</button>
+        </container>
+<div id="meuModal" class="modal">
+    <div class="modal-conteudo">
+        <span class="fechar">&times;</span>
+        <h3>Cadastre um Funcionário</h3>
+        <form id="formCadastro">
+            <input type="text" id="Nome" placeholder="Nome" name="nome" required>
+            <input type="text" id="CPF" placeholder="CPF" name="cpf" required>
+            <input type="text" id="E-mail" placeholder="E-mail" name="email" required>
+            <input type="text" id="Telefone" placeholder="Telefone" name="telefone" required>
+            <input type="text" id="Logradouro" placeholder="Logradouro" name="logradouro" required>
+            <button type="submit">+</button>
+        </form>
+    </div>
+</div>
+
+        <container class="apresentarfuncionarios">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>E-mail</th>
+                    <th>Telefone</th>
+                    <th>Logradouro</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>Carlão</td>
+                    <td>639.256.222.98</td>
+                    <td>carlao@gmail.com</td>
+                    <td>(11) 98765-4321</td>
+                    <td>Rua: Tomatão 007</td>
+                    <td>
+                        <button class="acao-btn editar">Editar</button>
+                        <button class="acao-btn excluir">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maria</td>
+                    <td>123.456.789-00</td>
+                    <td>maria@gmail.com</td>
+                    <td>(11) 91234-5678</td>
+                    <td>Avenida: Flores 123</td>
+                    <td>
+                        <button class="acao-btn editar">Editar</button>
+                        <button class="acao-btn excluir">Excluir</button>
+                </tr>
+                <tr>
+                    <td>José</td>
+                    <td>987.654.321-00</td>
+                    <td>jose@gmail.com</td>
+                    <td>(11) 99876-5432</td>
+                    <td>Rua: Sol 456</td>
+                    <td>
+                        <button class="acao-btn editar">Editar</button>
+                        <button class="acao-btn excluir">Excluir</button>
+                </tr>
+               
+            </table>
+        </container>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sistema de Gestão. Todos os direitos reservados.</p>    
+    </footer>
+</body>
+<script src="js/funcionarios.js"></script>
+</html>

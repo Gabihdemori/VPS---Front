@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clientes</title>
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Clientes</h1>
+        <div class="container">
+            <a href="home.html">Home</a>
+            <a href="produtos.html">Produtos</a>
+            <a href="funcionarios.html">Funcionários</a>
+        </div>
+    </header>
+
+    <main>
+        
+        <container class="cadastro">
+            <button id="abrirModal">Novo Cliente</button>
+        </container>
+<div id="meuModal" class="modal">
+    <div class="modal-conteudo">
+        <span class="fechar">&times;</span>
+        <h3>Cadastre um Cliente</h3>
+        <form id="formCadastro">
+            <input type="text" id="Nome" placeholder="Nome" name="nome" required>
+            <input type="text" id="CPF" placeholder="CPF" name="cpf" required>
+            <input type="text" id="E-mail" placeholder="E-mail" name="email" required>
+            <input type="text" id="Logradouro" placeholder="Logradouro" name="logradouro" required>
+            <button type="submit">+</button>
+        </form>
+    </div>
+</div>
+
+        <container class="apresentarclientes">
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>E-mail</th>
+                    <th>Logradouro</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>João</td>
+                    <td>115.589.683-36</td>
+                    <td>joao@gmail.com</td>
+                    <td>Rua: Tomatão 01</td>
+                    <td>
+                        <button class="acao-btn editar">Editar</button>
+                        <button class="acao-btn excluir">Excluir</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Maria</td>  
+                    <td>115.589.683-36</td>
+                    <td>maria@gmail.com</td>
+                    <td>Rua: Tomatão 02</td>
+                    <td>
+                        <button class="acao-btn editar">Editar</button>
+                        <button class="acao-btn excluir">Excluir</button>
+                </tr>
+                <tr>
+                    <td>Catarina</td>
+                    <td>115.589.683-36</td>
+                    <td>catarina@gmail.com</td>
+                    <td>Rua: Tomatão 03</td>
+                    <td>
+                        <button class="acao-btn editar">Editar</button>
+                        <button class="acao-btn excluir">Excluir</button>
+                </tr>   
+               
+            </table>
+        </container>
+    </main>
+    <footer>
+        <p>&copy; 2025 Sistema de Gestão. Todos os direitos reservados.</p>    
+    </footer>
+</body>
+<script src="js/clientes.js"></script>
+</html>
